@@ -49,6 +49,7 @@ nav a:hover {
 .container {
   width: 100%;
   color: #eee;
+  text-align: justify;
 }
 
 section {
@@ -64,6 +65,17 @@ section {
 .bands {
   background-image: url(../images/jessenabers.jpg);
   background-size: cover;
+}
+
+.bands .wrapper {
+  display:flex;
+  align-items: center;
+}
+
+.bands img {
+  width: 400px;
+  height: 250px;
+  transform: skewX(-20deg);
 }
 
 .tours {
@@ -93,7 +105,13 @@ section {
 }
 
 .socialmedia a {
-  width: 35px;
+  width: 30px;
+}
+
+.socialmedia img:hover {
+  background-color: #eee;
+  border-radius: 50%;
+  transform: scale(1.2);
 }
 
 .socialmedia img {

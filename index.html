@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Shamrock Music</title>
+    <title>Shamrock Music - Irish rock all over the world - tickets in store</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="./css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="rock, irish, music, band, folk, ticket, tickets, concert, gig, festival, tour, shop, store" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -17,12 +18,12 @@
     <header>
       <div class="jumbotron">
         <h1 class="display-2">Shamrock Music</h1>
-        <p class="lead">First service to connect bands with irish background all over the world</p>
+        <p class="lead">First service to connect bands with Irish background all over the world</p>
       </div>
     </header>
 
-    <nav>
-      <ul class="nav menu justify-content-end">
+    <nav class="menu">
+      <ul class="nav container justify-content-end">
         <li class="nav-item">
           <a class="nav-link" href="#news">News</a>
         </li>
@@ -74,14 +75,28 @@
           <h2>Bands</h2>
           <aside>Everything you need to know about your favourite band</aside>
         </header>
-        <article>
-          <h3>Dropkick Murphys</h3>
-          <p></p>
-          <h3>Seaside Rebels</h3>
-          <p></p>
-          <h3>The Rumjacks</h3>
-          <p></p>
-        </article>
+        <div class="wrapper">
+          <article class="col-lg-4">
+            <h3>Dropkick Murphys</h3>
+            <img class="dropkick" alt="dropkick murphys" src="images/dropkick.jpg" />
+            <p></p>
+            <a href='http://www.dropkickmurphys.com/' target="_blank">Check official website</a>
+          </article>
+
+          <article class="col-lg-4">
+            <h3>Seaside Rebels</h3>
+            <img class="seaside" alt="seaside rebels" src="images/seaside.jpg" />
+            <p></p>
+            <a href='https://www.facebook.com/SeasideRebels/' target="_blank">Check official website</a>
+          </article>
+
+          <article class="col-lg-4">
+            <h3>The Rumjacks</h3>
+            <img class="rumjacks" alt="the rumjacks" src="images/rumjacks.jpg" />
+            <p></p>
+            <a href='http://therumjacks.com/' target="_blank">Check official website</a>
+          </article>
+        </div>
       </section>
     </div>
 
@@ -114,10 +129,12 @@
 
     <footer>
       <div class="socialmedia fixed-bottom">
-        <a href='mailto:krzysztof.m.glinka@gmail.com' target="_blank"><img src="images/email.png"></a>
-        <a href='https://www.linkedin.com/in/frontend-chris-glinka' target="_blank"><img src="images/in.png"></a>
-        <a href='https://www.facebook.com/K.M.Glinka' target="_blank"><img src="images/fb2.png"></a>
-        <a href='https://github.com/Chris86g' target="_blank"><img src="images/GH.png"></a>
+        <div class="container">
+          <a href='mailto:krzysztof.m.glinka@gmail.com' target="_blank"><img src="images/email.png"></a>
+          <a href='https://www.linkedin.com/in/frontend-chris-glinka' target="_blank"><img src="images/in.png"></a>
+          <a href='https://www.facebook.com/K.M.Glinka' target="_blank"><img src="images/fb2.png"></a>
+          <a href='https://github.com/Chris86g' target="_blank"><img src="images/GH.png"></a>
+        </div>
       </div>
     </footer>
 
