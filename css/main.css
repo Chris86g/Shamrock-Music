@@ -48,6 +48,7 @@ nav a:hover {
 
 .container {
   width: 100%;
+  color: #eee;
 }
 
 section {
@@ -61,17 +62,18 @@ section {
 }
 
 .bands {
-  background-image: url(../images/jumboClover.jpg);
-  background-size: cover;
-}
-
-.tours {
   background-image: url(../images/jessenabers.jpg);
   background-size: cover;
 }
 
+.tours {
+  background-image: url(../images/RBBus.jpg);
+  background-size: cover;
+}
+
 .shop {
-  background-color: #222;
+  background-image: url(../images/giftshop.jpg);
+  background-size: cover;
 }
 
 .community {
