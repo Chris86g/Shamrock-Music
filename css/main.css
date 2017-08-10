@@ -126,13 +126,12 @@ article h3 {
 }
 
 .bands .skewed .seaside {
-  width: 140%;
-  left: -10%;
+  width: 125%;
 }
 
 .bands .skewed .seaside:hover {
   top: 90%;
-  left: 10%;
+  left: 20%;
 }
 
 .bands .skewed .rumjacks {
@@ -195,6 +194,10 @@ article h3 {
   background-size: cover;
 }
 
+.carousel-control-next-icon:hover {
+  color: #29f500;
+}
+
 .community {
   background-image: url(../images/dropkick-murphys.jpg);
   background-size: cover;
@@ -215,7 +218,6 @@ article h3 {
   color: #29f500;
 }
 
-
 .socialmedia {
   background: rgba(0,0,0,1);
   background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(13,64,1,1) 11%, rgba(41,245,0,1) 53%, rgba(41,245,0,1) 90%, rgba(13,64,1,1) 100%);
@@ -225,6 +227,17 @@ article h3 {
   background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(13,64,1,1) 11%, rgba(41,245,0,1) 53%, rgba(41,245,0,1) 90%, rgba(13,64,1,1) 100%);
   background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(13,64,1,1) 11%, rgba(41,245,0,1) 53%, rgba(41,245,0,1) 90%, rgba(13,64,1,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0d4001', GradientType=0 );
+}
+
+.socialmedia .container {
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialmedia .container p {
+  align-self: center;
+  margin: 0;
 }
 
 .socialmedia a {
@@ -240,5 +253,5 @@ article h3 {
 .socialmedia img {
   width: 25px;
   height: 25px;
-  margin: 5px;
+  margin: 3px 5px;
 }
