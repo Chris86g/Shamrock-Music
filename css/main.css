@@ -194,6 +194,12 @@ article h3 {
   background-size: cover;
 }
 
+.shop img {
+  height: 400px;
+  width: 400px;
+  margin-left: 100px;
+}
+
 .carousel-control-next-icon:hover {
   color: #29f500;
 }
@@ -230,7 +236,8 @@ article h3 {
 }
 
 .socialmedia .container {
-  color: #666;
+  color: #222;
+  font-size: 12px;
   display: flex;
   justify-content: space-between;
 }
