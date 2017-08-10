@@ -36,7 +36,6 @@ nav a {
 
 nav a:hover {
   color: #eee;
-  letter-spacing: .3px;
 }
 
 .sticky {
@@ -52,14 +51,31 @@ nav a:hover {
   text-align: justify;
 }
 
+div .container header {
+  padding-top: 50px;
+}
+
 section {
   height: 100vh;
-  width: 1200px;
 }
 
 .news {
   background-image: url(../images/rock.jpg);
   background-size: cover;
+}
+
+hr {
+  color: #29f500;
+  background-color: #29f500;
+  border-color: #29f500;
+}
+
+article h3 {
+  padding: 15px 0;
+}
+
+.news footer a {
+  color: #29f500;
 }
 
 .bands {
@@ -72,10 +88,106 @@ section {
   align-items: center;
 }
 
-.bands img {
-  width: 400px;
-  height: 250px;
+.bands .skewed {
+  position: relative;
+  right: 20%;
+  height: 260px;
+  width: 350px;
   transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  overflow: hidden;
+  outline: 2px solid #29f500;
+}
+
+/*.bands .skewed .mask {
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+}*/
+
+.bands .skewed img {
+  position: absolute;
+  top: 50%;
+  transform: skewX(20deg) translateY(-50%);
+  -webkit-transform: skewX(20deg) translateY(-50%);
+  -moz-transform: skewX(20deg) translateY(-50%);
+}
+
+.bands .skewed img:hover {
+  transition: 0.25s;
+  transform: skewX(20deg) scale(1.4) translateY(-50%);
+  -webkit-transform: skewX(20deg) scale(1.4) translateY(-50%);
+  -moz-transform: skewX(20deg) scale(1.4) translateY(-50%);
+}
+
+.bands .skewed .dropkick {
+  top: 55%;
+  width: 130%
+}
+
+.bands .skewed .dropkick:hover {
+  top: 75%;
+  width: 130%
+}
+
+.bands .skewed .seaside {
+  width: 140%;
+  left: -10%;
+}
+
+.bands .skewed .seaside:hover {
+  top: 90%;
+  left: 10%;
+}
+
+.bands .skewed .rumjacks {
+  width: 135%;
+}
+
+.bands .btn {
+  color: #eee;
+  border: 1px solid #29f500;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.bands .btn:hover {
+  color: #29f500;
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: shake .25s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-2deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .tours {
