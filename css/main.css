@@ -138,6 +138,40 @@ article h3 {
   width: 135%;
 }
 
+.come-in {
+  transform: translateX(1500px);
+  animation: come-in 0.5s cubic-bezier(0.25, 0.1, 0.93, 1.75) forwards;
+}
+
+.dm {
+  animation-delay: 1s;
+}
+
+.sr {
+  animation-delay: 1.5s;
+}
+
+.tr {
+  animation-delay: 2s;
+}
+
+h3 {
+  animation-delay: 2.5s;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.already-visible {
+  transform: translateX(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateX(0) translateY(0); }
+}
+
 .bands .btn {
   color: #eee;
   border: 1px solid #29f500;
@@ -260,5 +294,5 @@ article h3 {
 .socialmedia img {
   width: 25px;
   height: 25px;
-  margin: 3px 5px;
+  margin: 5px;
 }
