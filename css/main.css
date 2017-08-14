@@ -29,13 +29,13 @@ background: linear-gradient(to bottom, rgba(13,64,1,1) 0%, rgba(41,245,0,1) 10%,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d4001', endColorstr='#000000', GradientType=0 );
 }
 
-nav a {
-  color: #000;
+.menu a {
+  color: #000 !important;
   margin-right: 10px;
 }
 
-nav a:hover {
-  color: #eee;
+.menu a:hover, .menu a:active {
+  color: #eee !important;
 }
 
 .sticky {
@@ -218,9 +218,19 @@ h3 {
   }
 }
 
+.open {
+  height: 100vh;
+  width: 100%;
+}
+
 .tours {
+  width: 100%;
   background-image: url(../images/RBBus.jpg);
   background-size: cover;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
 }
 
 .shop {
