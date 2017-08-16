@@ -237,9 +237,16 @@ h3 {
   width: 100%;
 }
 
+.tours {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 .tours .date {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   margin: 5px;
   border: 1px solid #29f500;
   border-radius: 5px;
@@ -252,23 +259,19 @@ h3 {
 .tours .date .day {
   text-shadow: 0 0 3px #29f500;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2.5em;
 }
 
 .tours .date .month {
   text-transform: uppercase;
   color: #29f500;
   font-size: 1em;
-}
-
-.tours .tickets {
-
+  margin-bottom: 5px;
 }
 
 .tours .btn {
   color: #eee;
   border: 1px solid #29f500;
-  margin: 10px 0;
   border-radius: 5px;
   position: absolute;
 }
@@ -282,7 +285,7 @@ h3 {
 
 .tours .sold {
   position: relative;
-  top: -25px;
+  top: -15px;
   z-index: 5;
   padding: 0;
   margin: 0;
