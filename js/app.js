@@ -64,6 +64,22 @@ $(function() {
 
   });
 
+  var win = $(window),
+      sold = $(".sold");
+
+  win.scroll(function(event) {
+
+    sold.each(function(i, img) {
+      var img = $(img),
+          open = $(".open");
+
+      if (open.visible(true)) {
+        img.addClass("sold-animation");
+      }
+    });
+
+  });
+
   var links = subMenu.find('a'),
       href = subMenu.find('href');
 

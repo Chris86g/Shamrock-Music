@@ -237,11 +237,8 @@ h3 {
   width: 100%;
 }
 
-.tours {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
+.tours .location, .tours .city {
+  vertical-align: middle;
 }
 
 .tours .date {
@@ -273,6 +270,7 @@ h3 {
   color: #eee;
   border: 1px solid #29f500;
   border-radius: 5px;
+  margin: 25px 0;
   position: absolute;
 }
 
@@ -289,10 +287,41 @@ h3 {
   z-index: 5;
   padding: 0;
   margin: 0;
+  visibility: hidden;
 }
 
 .tours .sold img {
   height: 100px;
+}
+
+.tours .sold-animation {
+  animation: sold-show 0.4s forwards;
+}
+
+@keyframes sold-show {
+  0% {
+    visibility: hidden;
+  }
+  10% {
+    visibility: visible;
+    transform: scale(1.2);
+  }
+  100% {
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+
+.tours .london {
+  animation-delay: 2s;
+}
+
+.tours .rio {
+  animation-delay: 3s;
+}
+
+.tours .poznan {
+  animation-delay: 4s;
 }
 
 .shop {
