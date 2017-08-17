@@ -91,4 +91,22 @@ $(function() {
     }, 1500);
   });
 
+  var ad = $(".ad"),
+      adBtn = ad.find('.ad-btn');
+
+  adBtn.on('click', function(event) {
+    ad.css('display', 'none');
+  })
+
+  $(window).scroll(function() {
+    var scrollTop = $(document).scrollTop();
+        adPosition = ad.offset().top;
+
+    if (scrollTop > adPosition) {
+      ad.addClass('stickyAd');
+    } else {
+      ad.removeClass('stickyAd');
+    }
+  });
+
 });
