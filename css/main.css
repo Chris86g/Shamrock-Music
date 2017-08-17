@@ -317,11 +317,11 @@ h3 {
 }
 
 .tours .rio {
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 }
 
 .tours .poznan {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .shop {
@@ -332,11 +332,59 @@ h3 {
 .shop img {
   height: 400px;
   width: 400px;
-  margin-left: 100px;
 }
 
-.carousel-control-next-icon:hover {
+.shop .object {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.shop .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shop .price {
+  text-shadow: 0 0 3px #29f500;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.shop .btn {
+  color: #eee;
+  border: 1px solid #29f500;
+  border-radius: 5px;
+  margin: 25px 0;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shop .btn:hover {
   color: #29f500;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .community {
