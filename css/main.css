@@ -30,14 +30,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d4001', end
 }
 
 .mobile-menu {
-  background: #211401;
-  background: -moz-linear-gradient(left, #211401 0%, #439a00 6%, #97db01 51%, #439a00 95%, #140c01 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #211401), color-stop(6%, #439a00), color-stop(51%, #97db01), color-stop(95%, #439a00), color-stop(100%, #140c01));
-  background: -webkit-linear-gradient(left, #211401 0%, #439a00 6%, #97db01 51%, #439a00 95%, #140c01 100%);
-  background: -o-linear-gradient(left, #211401 0%, #439a00 6%, #97db01 51%, #439a00 95%, #140c01 100%);
-  background: -ms-linear-gradient(left, #211401 0%, #439a00 6%, #97db01 51%, #439a00 95%, #140c01 100%);
-  background: linear-gradient(to right, #211401 0%, #439a00 6%, #97db01 51%, #439a00 95%, #140c01 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211401', endColorstr='#140c01', GradientType=1 );
+  background: #000000;
+background: -moz-linear-gradient(left, #000000 0%, #0d4001 4%, #29f500 25%, #29f500 75%, #0d4001 96%, #000000 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, #000000), color-stop(4%, #0d4001), color-stop(25%, #29f500), color-stop(75%, #29f500), color-stop(96%, #0d4001), color-stop(100%, #000000));
+background: -webkit-linear-gradient(left, #000000 0%, #0d4001 4%, #29f500 25%, #29f500 75%, #0d4001 96%, #000000 100%);
+background: -o-linear-gradient(left, #000000 0%, #0d4001 4%, #29f500 25%, #29f500 75%, #0d4001 96%, #000000 100%);
+background: -ms-linear-gradient(left, #000000 0%, #0d4001 4%, #29f500 25%, #29f500 75%, #0d4001 96%, #000000 100%);
+background: linear-gradient(to right, #000000 0%, #0d4001 4%, #29f500 25%, #29f500 75%, #0d4001 96%, #000000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
 }
 
 .menu a {
@@ -660,4 +660,33 @@ footer .copy-mobile {
     text-decoration: none;
   }
 
+  .tours td {
+    font-size: 10px;
+  }
+
+  .tours .date {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tours .date .day {
+    font-size: 1.6em;
+  }
+
+  .tours .date .month {
+    font-size: .5em;
+  }
+
+  .tours .btn {
+    margin: 10px 0;
+    font-size: 10px;
+  }
+
+  .tours .sold {
+    top: 0px;
+  }
+
+  .tours .sold img {
+    height: 60px;
+  }
 }
