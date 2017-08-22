@@ -511,3 +511,19 @@ h3 {
   font-size: 1.5em;
   margin-top: 40px;
 }
+
+@media (max-width: 999px) {
+  .ad {
+    display: none;
+  }
+
+  section {
+    height: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  footer .socialmedia {
+    display: none;
+  }
+}
