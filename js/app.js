@@ -1,15 +1,18 @@
 $(function() {
-  var mainNav = $('nav');
-  var subMenu = $('.menu');
-  var navPosition = subMenu.offset().top;
+  var mainNav = $('nav'),
+      subMenu = $('.menu'),
+      mobileMenu =$('.mobile-menu')
+      navPosition = subMenu.offset().top;
 
   $(window).scroll(function() {
     var scrollTop = $(document).scrollTop();
 
     if (scrollTop > navPosition) {
       subMenu.addClass('sticky');
+      mobileMenu.addClass('sticky');
     } else {
       subMenu.removeClass('sticky');
+      mobileMenu.removeClass('sticky');
     }
   });
 
