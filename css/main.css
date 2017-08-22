@@ -566,6 +566,31 @@ footer .copy-mobile {
     -moz-transform: skewX(0) translateY(0);
   }
 
+  .tours .date {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tours .date .day {
+    font-size: 2em;
+  }
+
+  .tours .date .month {
+    font-size: .7em;
+  }
+
+  .tours .btn {
+    margin: 15px 0;
+  }
+
+  .tours .sold {
+    top: 0px;
+  }
+
+  .tours .sold img {
+    height: 75px;
+  }
+
   .shop .btn {
     margin: 45px 0;
   }
