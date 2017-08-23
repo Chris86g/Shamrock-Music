@@ -232,6 +232,7 @@ h3 {
 .open {
   height: 100vh;
   width: 100%;
+  display: block;
 }
 
 .tours {
@@ -335,19 +336,19 @@ h3 {
 }
 
 .shop {
-  background-image: url(../images/giftshop.jpg);
+  background-image: url(../images/shop.jpg);
   background-size: cover;
-}
-
-.shop img {
-  height: 400px;
-  width: 400px;
 }
 
 .shop .object {
   display: flex;
   justify-content: center;
   vertical-align: middle;
+}
+
+.shop img {
+  height: 400px;
+  width: 400px;
 }
 
 .shop .description {
@@ -463,8 +464,7 @@ h3 {
   position: absolute;
   right: 0;
   z-index: 10;
-  background-image: url(../images/r.png);
-  background-size: contain;
+  background-color: #111;
   border: 2px solid #29f500;
   outline: 1.5px solid #000;
   display: block;
@@ -566,6 +566,15 @@ footer .copy-mobile {
     -moz-transform: skewX(0) translateY(0);
   }
 
+  .open {
+    display: none;
+  }
+
+  .tours {
+    z-index: 0;
+    position: inherit;
+  }
+
   .tours .date {
     width: 60px;
     height: 60px;
@@ -583,8 +592,9 @@ footer .copy-mobile {
     margin: 15px 0;
   }
 
-  .tours .sold {
+  .tours .table .tickets .sold {
     top: 0px;
+    visibility: visible;
   }
 
   .tours .sold img {
@@ -597,6 +607,10 @@ footer .copy-mobile {
 }
 
 @media (max-width: 425px) {
+  header .jumbotron h1 {
+    font-size: 3em;
+  }
+
   footer .socialmedia img {
     margin: 2px;
   }
@@ -688,5 +702,10 @@ footer .copy-mobile {
 
   .tours .sold img {
     height: 60px;
+  }
+
+  .shop img {
+    height: 300px;
+    width: 300px;
   }
 }
