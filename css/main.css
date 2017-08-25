@@ -684,6 +684,11 @@ footer .copy-mobile {
     -moz-transform: skewX(0) scale(1.4) translateY(0);
   }
 
+  .come-in {
+    transform: translateX(0);
+    animation: none;
+  }
+
   .tours td {
     font-size: 10px;
   }
