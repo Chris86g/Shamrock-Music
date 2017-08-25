@@ -552,18 +552,6 @@ footer .copy-mobile {
 
   .bands .container article .skewed {
     left: 0;
-    height: 230px;
-    width: 300px;
-    transform: skewX(0);
-    -webkit-transform: skewX(0);
-    -moz-transform: skewX(0);
-  }
-
-  .bands .container article .skewed img {
-    top: 0;
-    transform: skewX(0) translateY(0);
-    -webkit-transform: skewX(0) translateY(0);
-    -moz-transform: skewX(0) translateY(0);
   }
 
   .open {
@@ -585,7 +573,7 @@ footer .copy-mobile {
   }
 
   .tours .date .month {
-    font-size: .7em;
+    font-size: .8em;
   }
 
   .tours .btn {
@@ -674,6 +662,28 @@ footer .copy-mobile {
     text-decoration: none;
   }
 
+  .bands .container article .skewed {
+    height: 230px;
+    width: 300px;
+    transform: skewX(0);
+    -webkit-transform: skewX(0);
+    -moz-transform: skewX(0);
+  }
+
+  .bands .container article .skewed img {
+    top: 0;
+    transform: skewX(0) translateY(0);
+    -webkit-transform: skewX(0) translateY(0);
+    -moz-transform: skewX(0) translateY(0);
+  }
+
+  .bands .skewed img:hover {
+    transition: 0;
+    transform: skewX(0) scale(1.4) translateY(0);
+    -webkit-transform: skewX(0) scale(1.4) translateY(0);
+    -moz-transform: skewX(0) scale(1.4) translateY(0);
+  }
+
   .tours td {
     font-size: 10px;
   }
@@ -684,11 +694,11 @@ footer .copy-mobile {
   }
 
   .tours .date .day {
-    font-size: 1.6em;
+    font-size: 2.2em;
   }
 
   .tours .date .month {
-    font-size: .5em;
+    font-size: .85em;
   }
 
   .tours .btn {
