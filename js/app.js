@@ -94,6 +94,12 @@ $(function() {
     }, 1500);
   });
 
+  $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+  });
+
   var ad = $(".ad"),
       adBtn = ad.find('.ad-btn');
 
