@@ -94,10 +94,11 @@ $(function() {
     }, 1500);
   });
 
-  $(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') ) {
-        $(this).collapse('hide');
-    }
+  var collapseNav = $('#collapseNav'),
+      closeMobileNav = collapseNav.find('a');
+
+  closeMobileNav.on('click', function() {
+    collapseNav.collapse('hide');
   });
 
   var ad = $(".ad"),
